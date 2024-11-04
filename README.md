@@ -4,7 +4,7 @@ This repository contains two Python modules for basic mathematical operations an
 math_class.py: This module defines a function add for adding two numbers.
 test_math_class.py: This module contains unit tests to verify the functionality of the add function.
 
-# Installation:
+# Installation
 There is no installation required for this basic code. You can directly run the Python scripts or import them into other projects.
 
 # Testing
