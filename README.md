@@ -11,7 +11,7 @@ There is no installation required for this basic code. You can directly run the 
 Testing:
 
 To run the unit tests, navigate to the directory containing these files and execute the following command in your terminal:
-python ```
+```
 python test_math_class.py
 ```
 
