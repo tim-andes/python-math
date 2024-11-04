@@ -18,6 +18,7 @@ python test_math_class.py
 # TO DO
 - [] extend test suite for more edge cases
 - [] create full arithmetic suite
+- [] reframe as lesson / tutorial
 - [] algebra
 - [] trigonometry
 - [] statistics
