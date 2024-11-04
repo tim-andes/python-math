@@ -3,5 +3,3 @@ def add(x,y):
       return TypeError
     else:
        return x + y
-    
-print(add(1, "one"))
