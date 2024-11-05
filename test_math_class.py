@@ -1,6 +1,5 @@
 import unittest
-from math_class import add
-from math_class import subtract
+from math_class_arithmetic import add, subtract
 
 class TestCalculator(unittest.TestCase):
     """
@@ -38,7 +37,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(2,3), -1)
         self.assertEqual(subtract(1,1), 0)
         self.assertEqual(subtract(.50,.25), .25)
-        self.assertEqual(subtract(-1000, -2000), 3000)
+        self.assertEqual(subtract(-1000, -2000), 1000)
         self.assertEqual(subtract("one", "two"), TypeError)
 
 
