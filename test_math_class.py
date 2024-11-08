@@ -1,5 +1,5 @@
 import unittest
-from math_class_arithmetic import add, subtract, multiply
+from math_class_arithmetic import add, subtract, multiply, divide
 
 class TestCalculator(unittest.TestCase):
     """
@@ -55,7 +55,26 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(multiply(1,1), 1)
         self.assertEqual(multiply(.50,.25), .125)
         self.assertEqual(multiply(-1000, -2000), 2000000)
-        self.assertEqual(multiply("one", "two"), TypeError)        
+        self.assertEqual(multiply("one", "two"), TypeError)    
+
+    def test_divide(self):
+        """
+        Tests the `divide` function with different input values.
+
+        This test method covers the following scenarios:
+        - Divides two positive integers.
+        - Divides two float decimals.
+        - Divides two negative integers.
+        - Dividing two non-numeric strings (expected to raise a TypeError).
+        - Dividing a number by 0 (expected to raise a ZeroDivisionError)
+        """
+        self.assertEqual(divide(18,3), 6)
+        self.assertEqual(divide(1,1), 1)
+        self.assertEqual(divide(.50,.25), 2)
+        self.assertEqual(divide(-6000,-2000), 3)
+        self.assertEqual(divide("one","two"), TypeError) 
+        self.assertEqual(divide(2,0), ZeroDivisionError) 
+
 
 if __name__ == '__main__':
     unittest.main() 
