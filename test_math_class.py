@@ -1,5 +1,5 @@
 import unittest
-from math_class_arithmetic import add, subtract
+from math_class_arithmetic import add, subtract, multiply
 
 class TestCalculator(unittest.TestCase):
     """
@@ -40,6 +40,22 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(-1000, -2000), 1000)
         self.assertEqual(subtract("one", "two"), TypeError)
 
+    def test_multiply(self):
+        """
+        Tests the `multilply` function with different input values.
+
+        This test method covers the following scenarios:
+        - Multiplying two positive integers.
+        - Multiplying two positive integers to equal 0.
+        - Multiplying two float decimals.
+        - Multiplying two negative integers.
+        - Multiplying two non-numeric strings (expected to raise a TypeError).
+        """
+        self.assertEqual(multiply(2,3), 6)
+        self.assertEqual(multiply(1,1), 1)
+        self.assertEqual(multiply(.50,.25), .125)
+        self.assertEqual(multiply(-1000, -2000), 2000000)
+        self.assertEqual(multiply("one", "two"), TypeError)        
 
 if __name__ == '__main__':
     unittest.main() 
