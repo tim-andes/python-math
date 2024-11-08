@@ -16,7 +16,7 @@ zero.)
 Examples:
     >>> from arithmetic_operations import add, subtract, multiply, divide
     >>> multiply(2,3)
-    >>> return(x + y)
+    >>> return(x * y)
     >>> # returns 6
 """
 
